@@ -27,9 +27,10 @@ export default async function createQuestionCollectio (){
   console.log("QUESTION ATTRIBUTES CREATED");
 
   //create indexes
-  await Promise.all([
-    databases.createIndex(db,questionCollection,"title",IndexType.Fulltext,["title"],["asc"]),
-    databases.createIndex(db,questionCollection,"content",IndexType.Fulltext,["content"],["asc"]),
-  ])
-  console.log("QUESTION INDEXES CREATED");
+  //GIVING ERROR SO DOING MANUALLY
+  // await Promise.all([
+  //   databases.createIndex(db,questionCollection,"title",IndexType.Fulltext,["title"],["asc"]),
+  //   databases.createIndex(db,questionCollection,"content",IndexType.Fulltext,["content"],["asc"]),
+  // ])
+  // console.log("QUESTION INDEXES CREATED");
 }
